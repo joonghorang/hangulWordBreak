@@ -1,0 +1,23 @@
+{
+  "name": "hangulWordBreak",
+  "homepage": "https://github.com/zhenos/hangulWordBreak",
+  "authors": [
+    "zhenos@hotmail.com"
+  ],
+  "description": "prevents hangul characters' line break in a word",
+  "main": "wordBreak.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "hangul"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
