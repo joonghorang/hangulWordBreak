@@ -2,18 +2,16 @@
 Coded in NHN NEXT 2015.
 
 - HOW TO USE
-	var wordBreak = new wordBreak('Your Web Font Name', 'Your Target <p>tag Class Name');
+	wordBreak('Your Web Font Name', 'Your Target <p>tag Class Name');
 	ex)
-	var pageTextWordBreak = new wordBreak('NotoSans', '.pageText');
-	//본문텍스트에 해당하는 css파일과 동일한 이름의 폰트 이름을 인자로 넘겨준다.
+	wordBreak('NotoSans', '.pageText');
+  * 본문텍스트에 해당하는 css파일과 동일한 이름의 폰트 이름을 인자로 넘겨준다.
 
 -Send Bug Report
 	zhenos@hotmail.com
 
 */
-
 function wordBreak(textPageFontName, targetClasssName){
-	// var globalWebFontName = textPageFontName; //윈도우 이므로 전역에 변수추가.
 	var check;
 	var beforeTestWidth;
 	webFontLoadCheckAndAfterWordBreak();
@@ -87,7 +85,6 @@ function wordBreak(textPageFontName, targetClasssName){
 			return pageWords;
 		}
 		function compareWidth(pageWords){
-debugger;
 			// 라인별로 비교 후 완성된 문장을 반환
 			$("body").append( "<span id = 'tempP'></span>" ); // 비교할 더미 span태그를 삽입
 			//adjust tempP CSS style to element CSS
@@ -160,5 +157,4 @@ debugger;
 			$('#tempP').remove();
 		}
 	}
-
 }
