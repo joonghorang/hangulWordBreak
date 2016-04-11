@@ -4,12 +4,18 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <style>
+          @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+          body {
+              /*//*/
+          }
+        </style>
         <title>LEEHWAIK GALLERY</title>
     </head>
     <style>
-      p{
+      .test{
         width : 200px;
-        font-family : "Arial";
+        font-family: "Nanum Gothic", sans-serif;
       }
     </style>
     <body>
@@ -23,6 +29,14 @@
 정부는 면세점 특허기간을 현행 5년에서 10년으로 늘리기로 했다. 지난 2013년 관세법 개정으로 특허기간이 10년에서 5년으로 짧아지면서 투자가 위축되고 경쟁력이 저하됐다는 판단에서다.
           </p>
         </div>
-        <script type="text/javascript" src = "./wordBreak.js"></script>
+        <!-- <script type="text/javascript" src = "./wordBreak.js"></script> -->
+        <script type="text/javascript" src = "./webFontOnload.js"></script>
+        <script>
+        function callBack(){
+          alert("now webfont loaded");
+          $(".test").css("font-family", "arial");
+        }
+        a("Nanum Gothic", callBack);
+        </script>
     </body>
 </html>
